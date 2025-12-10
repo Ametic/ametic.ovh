@@ -1,6 +1,6 @@
 ---
 layout: main.njk
-title: Ametic
+title: Home
 ---
 
 ```
@@ -43,7 +43,7 @@ Hey, i'm just a random dude from Poland who tries to code things, and maintain s
 - DDNet: [Ametic'](https://ddnet.org/players/Ametic-39-/)
 - osu!: [Delciak](https://osu.ppy.sh/u/Delciak)
 - Quaver: [Delciak](https://quavergame.com/user/614)
-- NameMC: [Ametic1337](https://namemc.com/Ametic1337)
+- NameMC: [xamt_](https://namemc.com/xamt_)
    </div>
    <div class="right"> 
 
