@@ -1,24 +1,17 @@
 (function () {
   var canvas = document.getElementById("ascii-banner");
-  var fallback = document.getElementById("ascii-banner-fallback");
-  if (!canvas) {
-    if (fallback) fallback.hidden = false;
-    return;
-  }
+  if (!canvas) return;
 
   var ctx = canvas.getContext("2d");
-  if (!ctx) {
-    if (fallback) fallback.hidden = false;
-    return;
-  }
+  if (!ctx) return;
 
   var lines = [
-    " █████╗  ███╗   ███╗ ███████╗ ████████╗ ██╗ ██████═╗ ",
-    "██╔══██╗ ████╗ ████║ ██╔════╝ ╚══██╔══╝ ██║ ██╔════╝ ",
-    "███████║ ██╔████╔██║ █████╗      ██║    ██║ ██║     ",
-    "██╔══██║ ██║╚██╔╝██║ ██╔══╝      ██║    ██║ ██║     ",
-    "██║  ██║ ██║ ╚═╝ ██║ ███████╗    ██║    ██║ ██████╗ ",
-    "╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚══════╝    ╚═╝    ╚═╝ ╚═════╝ ",
+    " █████╗ ███╗   ███╗███████╗████████╗██╗ ██████╗",
+    "██╔══██╗████╗ ████║██╔════╝╚══██╔══╝██║██╔════╝",
+    "███████║██╔████╔██║█████╗     ██║   ██║██║     ",
+    "██╔══██║██║╚██╔╝██║██╔══╝     ██║   ██║██║     ",
+    "██║  ██║██║ ╚═╝ ██║███████╗   ██║   ██║╚██████╗",
+    "╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝ ╚═════╝",
   ];
 
   var maxCssWidth = 920;
@@ -26,7 +19,7 @@
   var basePaddingX = 24;
   var basePaddingY = 24;
   var fontFamily =
-    "'JetBrains Mono', 'Cascadia Mono', 'Cascadia Code', Consolas, 'Courier New', monospace";
+    "'Cascadia Mono', 'Cascadia Code', Consolas, 'Courier New', monospace";
 
   var cssWidth = maxCssWidth;
   var cssHeight = 240;
@@ -46,17 +39,6 @@
     return widest;
   }
 
-  function getLineHeight(size) {
-    ctx.font = "700 " + size + "px " + fontFamily;
-    var metrics = ctx.measureText("█M");
-    var ascent = metrics.actualBoundingBoxAscent || 0;
-    var descent = metrics.actualBoundingBoxDescent || 0;
-    if (ascent > 0 || descent > 0) {
-      return Math.ceil((ascent + descent) * 1.14);
-    }
-    return Math.ceil(size * 1.24);
-  }
-
   function updateLayout() {
     var containerWidth = canvas.parentElement
       ? canvas.parentElement.clientWidth
@@ -68,31 +50,23 @@
     }
 
     var availableTextWidth = Math.max(120, cssWidth - basePaddingX * 2);
-    var scale = Math.min(1, availableTextWidth / textWidthAtBaseSize);
+    var scale = availableTextWidth / textWidthAtBaseSize;
     fontSize = Math.max(8, Math.floor(baseFontSize * scale));
-
-    ctx.font = "700 " + fontSize + "px " + fontFamily;
-    while (fontSize > 8 && getTextWidth(fontSize) > availableTextWidth) {
-      fontSize -= 1;
-      ctx.font = "700 " + fontSize + "px " + fontFamily;
-    }
 
     x = Math.max(8, Math.round(basePaddingX * scale));
     yStart = Math.max(8, Math.round(basePaddingY * scale));
-    lineHeight = Math.max(10, getLineHeight(fontSize));
+    lineHeight = Math.max(9, Math.round(fontSize * 1.05));
     cssHeight = yStart * 2 + lineHeight * lines.length;
     canvas.style.height = cssHeight + "px";
   }
 
   function resize() {
     updateLayout();
-    var dpr = Math.min(2, window.devicePixelRatio || 1);
+    var dpr = window.devicePixelRatio || 1;
     canvas.width = Math.round(cssWidth * dpr);
     canvas.height = Math.round(cssHeight * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    if (typeof ctx.imageSmoothingEnabled !== "undefined") {
-      ctx.imageSmoothingEnabled = false;
-    }
+    ctx.imageSmoothingEnabled = true;
   }
 
   function draw(ts) {
@@ -120,11 +94,7 @@
       ctx.fillText(lines[i], x, yStart + i * lineHeight);
     }
 
-    (window.requestAnimationFrame || function (cb) { return setTimeout(function () { cb(Date.now()); }, 16); })(draw);
-  }
-
-  if (fallback) {
-    fallback.hidden = true;
+    window.requestAnimationFrame(draw);
   }
 
   resize();
@@ -135,5 +105,5 @@
       resize();
     });
   }
-  (window.requestAnimationFrame || function (cb) { return setTimeout(function () { cb(Date.now()); }, 16); })(draw);
+  window.requestAnimationFrame(draw);
 })();
