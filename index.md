@@ -3,15 +3,21 @@ layout: main.njk
 title: Home
 ---
 
-```{.ascii}
- █████╗ ███╗   ███╗███████╗████████╗██╗ ██████╗
-██╔══██╗████╗ ████║██╔════╝╚══██╔══╝██║██╔════╝
-███████║██╔████╔██║█████╗     ██║   ██║██║     
-██╔══██║██║╚██╔╝██║██╔══╝     ██║   ██║██║     
-██║  ██║██║ ╚═╝ ██║███████╗   ██║   ██║╚██████╗
-╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝ ╚═════╝
-```                                     
-                                     
+<div class="ascii-banner-wrap">
+  <canvas id="ascii-banner" class="ascii-canvas" width="920" height="240" aria-hidden="true"></canvas>
+</div>
+<p class="ascii-copyright">© ametic.ovh</p>
+
+<div class="dir-nav">
+  <div class="dir-current">current dir: /ametic/ametic.ovh/home</div>
+  <div class="dir-links">
+    <a href="/">/home</a>
+    <a href="/projects/">/projects</a>
+    <a href="/blog/">/blog</a>
+    <a href="/setup/">/setup</a>
+  </div>
+</div>
+
 Owner of [TeeCloud Network](https://discord.gg/crS6bzNNqm), Moderator of [WubCraft](https://wubcraft.com/), hobbyist sysadmin and occasionally Twitch streamer.
 <br>
 ### I'm streaming here!
