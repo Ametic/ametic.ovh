@@ -5,6 +5,13 @@ title: Home
 
 <div class="ascii-banner-wrap">
   <canvas id="ascii-banner" class="ascii-canvas" width="920" height="240" aria-hidden="true"></canvas>
+  <pre id="ascii-banner-fallback" class="ascii-fallback" aria-label="Ametic ASCII banner" hidden>
+    _    __  __ _____ _____ ___ ____
+   / \  |  \/  | ____|_   _|_ _/ ___|
+  / _ \ | |\/| |  _|   | |  | | |
+ / ___ \| |  | | |___  | |  | | |___
+/_/   \_\_|  |_|_____| |_| |___\____|
+  </pre>
 </div>
 <p class="ascii-copyright">© ametic.ovh</p>
 
