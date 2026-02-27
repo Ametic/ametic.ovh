@@ -46,6 +46,17 @@
     return widest;
   }
 
+  function getLineHeight(size) {
+    ctx.font = "700 " + size + "px " + fontFamily;
+    var metrics = ctx.measureText("█M");
+    var ascent = metrics.actualBoundingBoxAscent || 0;
+    var descent = metrics.actualBoundingBoxDescent || 0;
+    if (ascent > 0 || descent > 0) {
+      return Math.ceil((ascent + descent) * 1.14);
+    }
+    return Math.ceil(size * 1.24);
+  }
+
   function updateLayout() {
     var containerWidth = canvas.parentElement
       ? canvas.parentElement.clientWidth
@@ -68,7 +79,7 @@
 
     x = Math.max(8, Math.round(basePaddingX * scale));
     yStart = Math.max(8, Math.round(basePaddingY * scale));
-    lineHeight = Math.max(9, Math.round(fontSize * 1.05));
+    lineHeight = Math.max(10, getLineHeight(fontSize));
     cssHeight = yStart * 2 + lineHeight * lines.length;
     canvas.style.height = cssHeight + "px";
   }
