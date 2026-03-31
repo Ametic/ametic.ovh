@@ -36,9 +36,10 @@ Owner of [TeeCloud Network](https://discord.gg/crS6bzNNqm), Moderator of [WubCra
 ### Where to contact me?
 
 - Discord: [Ametic](https://discord.com/users/256470398961582080)
+- Fluxer: [amt#1621](https://fluxer.gg/polska)
 - Matrix: [@ametic:noevil.pl](https://matrix.to/#/@ametic:noevil.pl)
-- Mail: [amt@omg.lol](mailto://amt@disroot.org) [[PGP]](https://home.omg.lol/keychain/amt/pgp)
-- XMPP: [amt@omg.lol](xmpp:amt@disroot.org)
+- Mail: [amt@omg.lol](mailto:amt@omg.lol) / [ametic@proton.me](mailto:ametic@proton.me) [[PGP]](https://home.omg.lol/keychain/amt/pgp)
+- XMPP: [amt@omg.lol](xmpp:amt@omg.lol)
 - Signal: [ametic.39](https://signal.me/#eu/zxYcf_88bLicQ9HxedBfjE_ldT2NVyyGXyeBgGMHyjpFSNT9s-NE-4CpQcHf0UrY)
 - Fediverse: [@amt@mk.ametic.ovh](https://mk.ametic.ovh/@amt)
 - Fediverse alt: [@amt@social.lol](https://social.lol/@amt)
