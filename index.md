@@ -38,10 +38,10 @@ Owner of [TeeCloud Network](https://discord.gg/crS6bzNNqm), Moderator of [WubCra
 - Discord: [Ametic](https://discord.com/users/256470398961582080)
 - Fluxer: [amt#1621](https://fluxer.gg/polska)
 - Matrix: [@ametic:noevil.pl](https://matrix.to/#/@ametic:noevil.pl)
-- Mail: [amt@omg.lol](mailto:amt@omg.lol) / [ametic@proton.me](mailto:ametic@proton.me) [[PGP]](https://home.omg.lol/keychain/amt/pgp)
+- Mail: [me@ametic.ovh](mailto:me@ametic.ovh) [[PGP]](https://home.omg.lol/keychain/amt/pgp)
 - XMPP: [amt@omg.lol](xmpp:amt@omg.lol)
 - Signal: [ametic.39](https://signal.me/#eu/zxYcf_88bLicQ9HxedBfjE_ldT2NVyyGXyeBgGMHyjpFSNT9s-NE-4CpQcHf0UrY)
-- Fediverse: [@amt@mk.ametic.ovh](https://mk.ametic.ovh/@amt)
+- Fediverse: [@amt@101010.pl](https://101010.pl/@amt)
 - Fediverse alt: [@amt@social.lol](https://social.lol/@amt)
 - Reddit: [ayase1337](https://www.reddit.com/user/ayase1337/)
 
