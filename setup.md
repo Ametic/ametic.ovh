@@ -34,7 +34,9 @@ title: Setup
 - Mouse: [VXE MAD R+](https://www.amazon.com/s?k=VXE+MAD+R%252B)
 - Audio:
   - Headset: [SteelSeries Arctis 7X+](https://www.amazon.com/s?k=SteelSeries+Arctis+7X)
+  - DAP: [FiiO SnowSky Echo Mini](https://www.fiio.com/echomini)
   - IEM:
+    - [TANGZU Wan’er S.G II Red Lion Edition](https://www.linsoul.com/products/tangzu-wan-er-s-g-ii-bass-version-lion-edition)
     - [Moondrop Chu II](https://www.amazon.com/s?k=Moondrop+Chu+II) ([Fiio HS19 Foam Tips](https://aliexpress.com/w/wholesale-fiio-hs19-eartips.html) + 2PIN -> MMCX)
     - [KZ Castor Bass Version](https://www.amazon.com/s?k=KZ+Castor+Bass+Version)
   - TWS: [Moondrop Space Travel](https://www.amazon.com/s?k=Moondrop+Space+Travel)
